@@ -14,8 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family), sans-serif;
-  font-variation-settings: "wght" var(--text-font-weight)
-    var(--title-font-weight);
+  font-variation-settings: "wght" var(--text-font-weight);
   background-image: var(--background-img);
   object-fit: cover;
   background-attachment: fixed;
@@ -57,6 +56,7 @@
 }
 
 .card__title {
+  font-variation-settings: "wght" var(--title-font-weight);
   line-height: var(--card-title-line-height);
   font-size: var(--card-font-size);
   padding: 6px 10px 4px;
@@ -65,8 +65,8 @@
 
 .card__img-conteiner {
   position: relative;
-  inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
-  block-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  block-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
 }
 
 .card__img-lable {
@@ -83,7 +83,7 @@
 }
 
 @supports (-webkit-text-stroke: 1px var(--shadow-color)) {
-  .card__img-label {
+  .card__img-lable {
     -webkit-text-stroke: 1px var(--shadow-color);
     text-shadow: none;
   }
